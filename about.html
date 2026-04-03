@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Atteh Victor | Sparks Digital</title>
+  <meta name="description"
+    content="Learn about Atteh Victor, the visual brand strategist and web developer behind Sparks Digital.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="brand-logo.png" alt="Sparks Digital Logo Mark" class="brand-logo-mark"
+          onerror="this.style.display='none';">
+        <span class="logo">SPARKS DiGiTAL</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section about-hero">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h1 class="section-title">The Mind Behind the Strategy</h1>
+          <p class="section-subtitle">Blending aesthetic perfection with strategic business goals.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="fade-in">
+            <img src="victor-portrait.webp" alt="Atteh Victor Professional Portrait"
+              style="border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.1);"
+              onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800'">
+          </div>
+          <div class="about-text fade-in" style="transition-delay: 0.1s;">
+            <p>Hi, I'm Atteh Victor. My journey into visual design didn't start with just making things look pretty. It
+              started with a desire to solve communication problems. In 2022, I fully immersed myself in graphic design,
+              studying the psychology of visual identity and how colors, typography, and structure influence human
+              behavior.</p>
+
+            <p>I realized quickly that a beautiful logo isn't enough if it doesn't align with a company's strategic
+              goals. That realization led to the launch of <strong>Sparks Digital</strong> in 2023.</p>
+
+            <p>Since then, I've expanded my expertise into high-end web design and development, ensuring that my clients
+              not only have a compelling visual identity but also a powerful digital home that converts.</p>
+
+            <div class="mission-box">
+              <h3>My Mission</h3>
+              <p style="margin-bottom:0; font-size: 0.95rem;">To empower brands and individuals by closing the gap
+                between strategic intent and visual execution, creating digital experiences that leave a lasting impact.
+              </p>
+            </div>
+
+            <div style="margin-top: var(--spacing-md);">
+              <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-wrapper">
+            <img src="/brand-logo.png" alt="Sparks Digital Logo Mark" class="footer-brand-logo-mark"
+              onerror="this.style.display='none';">
+            <span class="footer-logo">SPARKS DiGiTAL</span>
+          </a>
+          <p style="max-width: 300px; font-size: 0.9rem;">Elevating brands through strategic design and development.</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sparks Digital by Atteh Victor. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
