@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sparks Digital</title>
+  <meta name="description" content="Get in touch with Sparks Digital to start a project.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="brand-logo.png" alt="Sparks Digital Logo Mark" class="brand-logo-mark"
+          onerror="this.style.display='none';">
+        <span class="logo">SPARKS DiGiTAL</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section">
+      <div class="container fade-in">
+        <div class="section-header" style="text-align: left; margin-bottom: var(--spacing-md);">
+          <h1 class="section-title">Let's build something great.</h1>
+          <p class="section-subtitle" style="margin-left: 0;">Fill out the form below or reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.2rem;">Email</h3>
+                <a href="mailto:hello@sparksdigital.com"
+                  style="color: var(--text-light); text-decoration: underline;">hello@sparksdigital.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.2rem;">WhatsApp</h3>
+                <a href="https://wa.me/1234567890" style="color: var(--text-light); text-decoration: underline;">+1
+                  (234) 567-8900</a>
+              </div>
+            </div>
+
+            <div
+              style="margin-top: var(--spacing-lg); padding: var(--spacing-md); background: var(--off-white); border-radius: var(--border-radius);">
+              <h3 style="margin-bottom: 1rem; color: var(--primary-blue);">Currently booking for Q3 2026.</h3>
+              <p style="font-size: 0.9rem; color: var(--text-light);">I typically reply to project inquiries within
+                24–48 hours to schedule a discovery call.</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="card form-container" style="box-shadow: none; border: 1px solid #eaeaea;">
+            <form action="#" method="POST" id="contactForm">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" id="email" name="email" class="form-control" required
+                    placeholder="john@example.com">
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label for="projectType" class="form-label">Project Type</label>
+                  <select id="projectType" name="projectType" class="form-control" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="branding">Brand Identity Design</option>
+                    <option value="web">Web Design & Development</option>
+                    <option value="both">Branding + Web</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget" class="form-label">Estimated Budget</label>
+                  <select id="budget" name="budget" class="form-control" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="1500-3000">$1,500 - $3,000</option>
+                    <option value="3000-5000">$3,000 - $5,000</option>
+                    <option value="5000+">$5,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Project Details</label>
+                <textarea id="message" name="message" class="form-control" required
+                  placeholder="Tell me about your business, your goals, and what you're looking to achieve..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-wrapper">
+            <img src="brand-logo.png" alt="Sparks Digital Logo Mark" class="footer-brand-logo-mark"
+              onerror="this.style.display='none';">
+            <span class="footer-logo">SPARKS DiGiTAL</span>
+          </a>
+          <p style="max-width: 300px; font-size: 0.9rem;font-style: italic;">...from ideas to creation!</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.behance.net/victorsparks1" aria-label="Behance"><i class="fab fa-behance"></i></a>
+          <a href="https://www.facebook.com/share/1DuxGNwn9v/?mibextid=wwXIfr" aria-label="Facebook"><i
+              class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/sparkssdigital?igsh=NWFib2I0aDZudTU4&utm_source=qr"
+            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@sparkssdigital?_r=1&amp;_t=ZS-95GRQMJweeN" aria-label="Tiktok"><i
+              class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sparks Digital. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple form submission prevention for demo
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
+      btn.textContent = 'Message Sent Successfully!';
+      btn.style.backgroundColor = '#10B981'; // Success green
+      btn.style.borderColor = '#10B981';
+
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.backgroundColor = '';
+        btn.style.borderColor = '';
+        this.reset();
+      }, 3000);
+    });
+  </script>
+</body>
+
+</html>
